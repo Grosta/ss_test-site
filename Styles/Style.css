@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+h1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    text-shadow:0 0 10px white;
+    cursor: default;
+    user-select: none;
+    animation: blinking 5s infinite alternate;
+}
+
+@keyframes blinking {
+    0%{
+        font-size: 80px;
+    }
+
+    50%{
+        font-size: 100px;
+    }
+
+    100%{
+        font-size: 80px;
+    }
+}
